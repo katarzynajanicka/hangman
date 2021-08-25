@@ -24,7 +24,6 @@ elif msg == 'play':
 
         guess_letter = input('Input a letter: ')
 
-
         if len(guess_letter) != 1:
             print('You should input a single letter')
             continue
@@ -34,10 +33,10 @@ elif msg == 'play':
             continue
 
         if guess_letter in guessed_letters:
-            print("You've already guessed this letter")
+            print('You\'ve already guessed this letter')
 
         elif guess_letter not in secret_word:
-            print("That letter doesn't appear in the word")
+            print('That letter doesn\'t appear in the word')
             age -= 1
 
         else:
